@@ -1,0 +1,34 @@
+* {  margin: 0;
+    padding: 0;
+    box-sizing: border-box; }
+ html{
+  scroll-behavior:smooth;
+     }
+body{
+     background-image: linear-gradient(to right, rgb(56, 15, 122),rgb(107, 13, 151),rgb(143, 29, 143));
+    font-family: 'Josefin Sans', sans-serif;
+    height: 100%;
+    position: relative;
+    place-items: center;
+}
+@keyframes color{
+  0%{color: red;}
+  10%{color: green;}
+  20%{color: blue;}
+  30%{color: yellow;}
+  50%{color:rgb(63, 63, 158);}
+  60%{color: fuchsia;}
+  70%{color: blue;}
+  80%{color: #000;}
+
+}
+
+
+@import "centro";
+@import "aside";
+@import "footer";
+@import "media";
+@import "navegacionPrincipal";
+@import "pag-secundarias";
+
+

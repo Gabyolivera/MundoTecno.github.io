@@ -1,0 +1,110 @@
+footer{ 
+    background-color: #0c010c;
+    color: #f3e4f2;
+    padding: 10px 0;
+    font-size: 1rem;
+    .footer-content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+      }
+      .footer-section {
+        flex: 1 1 300px;
+       text-align: center;
+       top: 100px;
+       & a:hover{
+        color: #9743b8;
+        text-decoration:underline;
+       }
+      }
+      .footer-section.about {
+        .logo-0 {
+            font-size: 2rem; 
+          }
+            & p {
+            margin-bottom: 1.5rem; 
+       }
+      
+     }
+     .contact span {
+        display: block;
+        margin-bottom: 0.5rem;
+      }
+      .social-icons a {
+
+        margin-right: 10px;
+      }
+     .links{
+        ul {
+            list-style-type: none;
+            margin-left: 0;
+          }
+        & li {
+            margin-bottom: 10px;
+             a{
+                text-decoration: none;
+                color:#f7eaf6 ;
+              }
+          }
+          
+     } 
+       
+ .contact-form input,
+ .contact-form textarea {
+   width: 100%;
+ 
+  }  
+  .footer-bottom{
+    text-align: center;
+ }
+ .form-group {
+    margin-bottom: 10px;
+    color: #f1f1f1;
+  }
+  .copy{
+    display: flex;
+   justify-content: center;
+   }
+  }    
+
+input[type="checkbox"] {
+  display: none;
+ }
+  input[type="checkbox"] + label {
+    position: relative;
+    padding-left: 25px;
+    cursor: pointer;
+    color: #f1f1f1;
+       }
+       input[type="checkbox"]:checked + label:after {
+        content: "\2713";
+        display: block;
+        color: #fff;
+        font-size: 14px;
+        font-weight: bold;
+        left: 4px;
+        top: 1px;
+        color: #ccc;
+          }
+          input[type="checkbox"] + label:before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 18px;
+            height: 18px;
+            border: 2px solid #ccc;
+            border-radius: 3px;
+            
+          }
+          input[type="checkbox"] + label:after {
+            content: "";
+            position: absolute;
+            display: none;
+          } 
+          input[type="checkbox"] + label {
+            position: relative;
+            padding-left: 25px;
+            cursor: pointer;
+            color: #f1f1f1; 
+    }
