@@ -292,13 +292,21 @@ input[type=checkbox] + label {
     font-size: 11px;
     margin-left: 5px;
   }
+  /*pagina sobre nosotros*/
+  .terminos {
+    display: flex;
+    top: 15%;
+    width: 35%;
+    height: 80%;
+  }
+  .terminos li a {
+    font-size: 0.8em;
+    text-align: center;
+  }
   .video {
     display: none;
   }
   /*media notebooks*/
-  #carouselAutoplaying2 {
-    display: none;
-  }
   .texto h1 strong {
     font-size: 0.5em;
   }
@@ -358,17 +366,6 @@ input[type=checkbox] + label {
   }
   .youtube iframe {
     display: none;
-  }
-  /*pagina sobre nosotros*/
-  .terminos {
-    display: flex;
-    top: 10.58%;
-    width: 27%;
-    height: 79%;
-  }
-  .terminos li a {
-    font-size: 0.8em;
-    text-align: center;
   }
   /*footer general para todas las paginas*/
   .footer-section ul li a {
@@ -441,7 +438,7 @@ input[type=checkbox] + label {
 }
 
 .cuotas {
-  background-color: rgb(68, 233, 219);
+  background-color: rgb(51, 65, 194);
   width: 100%;
   height: 100px;
   margin-top: 90px;
@@ -468,12 +465,6 @@ input[type=checkbox] + label {
   margin-top: 50px;
 }
 
-section #carouselAutoplaying2 {
-  position: relative;
-  top: 10px;
-  width: 90%;
-  left: 100px;
-}
 section .productos {
   display: flex;
   flex-flow: wrap;
@@ -646,9 +637,9 @@ section .productos .productos-item .carrito .carrito:hover {
 }
 
 .terminos {
-  width: 20%;
-  height: 51.2%;
   position: absolute;
+  width: 23%;
+  height: 51.2%;
   bottom: 350px;
   background-color: #9e81aa;
   font-size: 18px;
@@ -736,6 +727,43 @@ section .productos .productos-item .carrito .carrito:hover {
   color: #000;
 }
 .contacto .contacto-2 {
+  font-size: 23px;
+  margin-top: 30px;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  color: #000;
+}
+label input[type=text],
+label textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+label textarea {
+  height: 100px;
+}
+label input[type=submit] {
+  background-color: #4e3d99;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=text],
+textarea {
+  width: 70%;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+textarea {
+  height: 100px;
+}
+textarea .contacto-2 {
   font-size: 23px;
   margin-top: 30px;
 }

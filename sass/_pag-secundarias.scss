@@ -1,5 +1,6 @@
 /*pagina notebooks*/
 
+
 .texto{
     display: inline;
     color:#000 ;
@@ -15,7 +16,7 @@
      }
 
 .cuotas{
-background-color: rgb(68, 233, 219);
+background-color: rgb(51, 65, 194);
 width: 100%;
 height: 100px;
 margin-top: 90px;
@@ -42,13 +43,6 @@ margin-top: 50px;
 
 }
 section{
-#carouselAutoplaying2{
-position:relative;
-top: 10px;
-width: 90%;
-left: 100px;
-
-}
 .productos{
  display:flex;
 flex-flow: wrap; 
@@ -228,9 +222,9 @@ margin-top: 60px;
 }
 
 .terminos{
-width: 20%;
-height: 51.2%;
 position: absolute;
+width: 23%;
+height: 51.2%;
 bottom: 350px;
 background-color: #9e81aa;
 font-size: 18px;
@@ -339,7 +333,7 @@ height: 100px;
 }
 
 input[type="submit"] {
-background-color: #4CAF50;
+background-color: #4e3d99;
 color: white;
 padding: 10px 20px;
 border: none;
@@ -357,39 +351,80 @@ margin-bottom: 20px;
 textarea {
 height: 100px;
 
-input[type="text"],
-textarea {
-width: 100%;
-padding: 10px;
-margin-bottom: 20px;
-}
-
-textarea {
-height: 100px;
-
-input[type="text"],
-textarea {
+.contacto-2{
+  font-size: 23px;
+  margin-top: 30px;
+  
+  }
+  }
+  label {
+  display: block;
+  margin-bottom: 10px;
+  color: #000;
+  
+  input[type="text"],
+  textarea {
   width: 100%;
   padding: 10px;
   margin-bottom: 20px;
+  }
   
-}
-
-input[type="submit"] {
+  textarea {
+  height: 100px;
+  }
+  
+  input[type="submit"] {
   background-color: #4CAF50;
   color: white;
   padding: 10px 20px;
   border: none;
   cursor: pointer;
-}
-}
-
-}
-
-input[type="submit"] {
-background-color: #4CAF50;
-color: white;
-padding: 10px 20px;
-border: none;
-cursor: pointer;
-}
+  }
+  }
+  
+  input[type="text"],
+  textarea {
+  width: 70%;
+  padding: 10px;
+  margin-bottom: 20px;
+  }
+  
+  textarea {
+  height: 100px;
+  
+  input[type="text"],
+  textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  }
+  
+  textarea {
+  height: 100px;
+  
+  input[type="text"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    
+  }
+  
+  input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  }
+  
+  }
+  
+  input[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  }

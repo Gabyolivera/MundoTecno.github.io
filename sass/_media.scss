@@ -21,15 +21,22 @@ body{
           }  
        }
     }
-
-
+/*pagina sobre nosotros*/
+.terminos{
+       display: flex;
+       top:15%;
+       width: 35%;
+       height: 80%;
+        & li a{
+            font-size: 0.8em;
+            text-align: center;
+          }
+    }
 .video{
       display: none;
     }
 /*media notebooks*/
-#carouselAutoplaying2{
-      display: none;
-    }
+
 .texto{
   h1 strong{
     font-size: 0.5em;
@@ -99,20 +106,10 @@ body{
   }
 }
 
-/*pagina sobre nosotros*/
-.terminos{
-      display:flex;
-       top:10.58%;
-        width: 27%;
-        height: 79%;
-         
-          & li a{
-            font-size: 0.8em;
-            text-align: center;
-          }
-    }
+
+
     
-    /*footer general para todas las paginas*/
+ /*footer general para todas las paginas*/
 .footer-section ul li a{
       display: none;
       h2{
