@@ -48,7 +48,8 @@ header .container-fluid {
   display: flex;
   background-color: #9743b8;
   position: absolute;
-  padding-top: 50px;
+  padding-top: 60px;
+  padding-bottom: 10px;
 }
 
 .centro {
@@ -293,15 +294,15 @@ input[type=checkbox] + label {
     margin-left: 5px;
   }
   /*pagina sobre nosotros*/
-  .terminos {
-    display: flex;
-    top: 15%;
-    width: 35%;
-    height: 80%;
+  .imgHistoria {
+    display: none;
   }
-  .terminos li a {
-    font-size: 0.8em;
-    text-align: center;
+  .terminos {
+    width: 25%;
+    height: auto;
+  }
+  .terminos .box a {
+    font-size: 18px;
   }
   .video {
     display: none;
@@ -384,6 +385,9 @@ input[type=checkbox] + label {
   footer {
     margin-top: 100px;
   }
+  footer h2 {
+    display: none;
+  }
 }
 /*media queries tablets o manera horizontal*/
 @media only screen and (min-width: 769px) and (max-width: 1024px) and (orientation: landscape) {
@@ -398,9 +402,8 @@ input[type=checkbox] + label {
     width: 400px;
   }
   /*pag quienes somos*/
-  .terminos {
-    top: 22.5%;
-    height: 53%;
+  .imgHistoria {
+    display: none;
   }
 }
 .navegacion {
@@ -425,6 +428,8 @@ input[type=checkbox] + label {
   color: #fff;
   box-shadow: inset 100px 0 30px 0 #9743b8;
   border-radius: 40px 40px;
+  transform: scale(1.04);
+  transition: transform 0.3s;
 }
 
 /*pagina notebooks*/
@@ -475,7 +480,7 @@ section .productos {
   justify-content: center;
 }
 section .productos .productos-item {
-  width: 300px;
+  width: 350px;
   margin-left: 5%;
   margin-top: 40px;
   margin-bottom: 40px;
@@ -494,7 +499,7 @@ section .productos .productos-item img {
 }
 section .productos .productos-item .detalle {
   background-color: #9743b8;
-  height: 50px;
+  height: 70px;
   width: 100%;
   text-align: center;
   font-weight: bolder;
@@ -505,9 +510,13 @@ section .productos .productos-item .detalle .detalle:hover {
   background-color: blue;
 }
 section .productos .productos-item .carrito {
-  border-radius: 8px 8px;
+  border-radius: 5px 5px;
   background-color: #533ac2;
   width: 100%;
+  height: 20%;
+}
+section .productos .productos-item .carrito a {
+  text-decoration: none;
 }
 section .productos .productos-item .carrito .carrito:hover {
   background-color: red;
@@ -549,7 +558,7 @@ section .productos .productos-item .carrito .carrito:hover {
   justify-content: center;
 }
 .productos .productos-item {
-  width: 300px;
+  width: 350px;
   margin-left: 5%;
   margin-top: 40px;
   margin-bottom: 40px;
@@ -561,6 +570,11 @@ section .productos .productos-item .carrito .carrito:hover {
   background-color: #f4eef7;
   color: #531a69;
   font-weight: bold;
+  border-radius: 5px 5px;
+}
+.productos .productos-item:hover {
+  transform: scale(1.04);
+  transition: transform 0.3s;
 }
 .productos .productos-item img {
   width: auto;
@@ -571,9 +585,14 @@ section .productos .productos-item .carrito .carrito:hover {
   padding-left: 200px;
 }
 .productos .productos-item .carrito {
-  border-radius: 8px 8px;
+  border-radius: 5px 5px;
   background-color: #533ac2;
   width: 100%;
+  height: 18%;
+}
+.productos .productos-item .carrito a {
+  text-decoration: none;
+  color: #000;
 }
 .productos .productos-item .carrito:hover {
   background-color: red;
@@ -627,13 +646,10 @@ section .productos .productos-item .carrito .carrito:hover {
 
 /*pagina sobre nosotros*/
 .quienes-somos {
-  width: 80%;
-  height: auto;
   display: inline-block;
   color: #ccc;
   font-size: 20px;
-  padding-left: 20%;
-  margin: 50px;
+  margin: 5%;
   text-align: center;
 }
 .quienes-somos .somos {
@@ -641,39 +657,56 @@ section .productos .productos-item .carrito .carrito:hover {
 }
 
 .terminos {
-  position: absolute;
-  width: 23%;
-  height: 51.2%;
-  bottom: 350px;
-  background-color: #9e81aa;
-  font-size: 18px;
+  display: flex;
 }
-.terminos li {
-  list-style: none;
-  padding-top: 100px;
+.terminos .box {
+  flex: 1;
+  margin-right: 10px;
+  justify-content: center;
+  background-color: #ccc3d3;
+  margin: 3%;
 }
-.terminos li a {
+.terminos a {
   text-decoration: none;
   color: #000;
   display: block;
   padding: 20px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
 }
-.terminos li a:hover {
-  color: #fff;
-  box-shadow: inset 200px 0 0 0 #9743b8;
+.terminos a:hover {
+  text-align: center;
+  color: #472a8a;
+  box-shadow: inset 500px 0 0 0 #239494;
+  transform: scale(1.04);
+  transition: transform 0.3s;
+}
+
+.imgHistoria {
+  padding: 20px 10px;
+  background-color: white;
+  letter-spacing: 110px;
+  padding-left: 65px;
+}
+.imgHistoria img {
+  border-radius: 5px 5px;
 }
 
 /*pagina terminos y condiciones*/
 .terminosycondiciones {
-  margin: 20px;
-  padding: 20px;
-  border: 1px solid #ccc;
+  margin: 25px;
+  padding: 25px;
+  border: 3px solid #ccc;
   font-family: Arial, sans-serif;
   color: #000;
-  text-align: center;
+  background: #a17b7b;
+}
+.terminosycondiciones li {
+  list-style: square;
 }
 .terminosycondiciones h2 {
-  font-size: 15px;
+  font-size: 25px;
   margin-bottom: 10px;
   color: #000;
 }
@@ -681,156 +714,163 @@ section .productos .productos-item .carrito .carrito:hover {
   margin-bottom: 10px;
   color: #000;
 }
-.terminosycondiciones li {
-  list-style: none;
-}
 
 /*como comprar*/
 .comprar {
   margin: 20px;
-  padding: 20px;
-  border: 1px solid #ccc;
+  padding: 25px;
+  border: 3px solid #ccc;
   font-family: Arial, sans-serif;
   color: #000;
-  text-align: center;
+  background: #8867b3;
+  list-style-type: style;
 }
-.comprar h2 {
-  font-size: 18px;
+.comprar h3 {
+  font-size: 20px;
   margin-bottom: 10px;
 }
 .comprar p {
   font-size: 18px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 /*pagina Ayuda*/
 .ayuda {
-  max-width: 800px;
+  max-width: 80%;
   margin: 20px auto;
   padding: 20px;
-  border: 1px solid #ccc;
+  border: 5px solid #ccc;
   color: #000;
   font-size: 20px;
 }
 .ayuda h2 {
-  font-size: 20px;
+  font-size: 30px;
   margin-bottom: 10px;
+  color: #ccc;
 }
-.ayuda p {
-  margin-bottom: 10px;
+
+.preg-frec {
+  margin-bottom: 20px;
+}
+
+.frecuentes-button {
+  background-color: #9385b9;
+  color: #333;
+  padding: 10px;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.frecuentes-button:hover {
+  background-color: #8867b3;
+}
+
+.respuesta {
+  padding: 2px;
+  background-color: #f9f9f9;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+
+input[type=radio] {
+  display: none;
+}
+
+input[type=radio]:checked + label + .respuesta {
+  max-height: 700px;
 }
 
 /*pag contacto*/
 .contacto {
-  max-width: 600px;
-  margin: 0 auto;
-  padding: 20px;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1.5em;
   color: #000;
-}
-.contacto h1 {
-  color: #000;
-}
-.contacto .contacto-2 {
-  font-size: 23px;
-  margin-top: 30px;
+  font-size: 20px;
+  background-image: linear-gradient(to right, rgb(158, 158, 167), rgb(94, 94, 97));
 }
 
-label {
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.log {
+  text-align: center;
+  font-size: 2em;
+}
+
+.log span {
+  color: #e4dada;
+}
+
+.contact-wrapper {
+  box-shadow: 0 0 30px 10px rgb(73, 21, 117);
+}
+
+.contact-wrapper > * {
+  padding: 1em;
+}
+
+.contacto-form form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.contacto-form form label {
   display: block;
-  margin-bottom: 10px;
-  color: #000;
 }
-label input[type=text],
-label textarea {
+
+.contacto-form form p {
+  margin: 0;
+  padding: 1em;
+}
+
+.contacto-form form .block {
+  grid-column: 1/3;
+}
+
+.contacto-form form button,
+.contacto-form form input,
+.contacto-form form textarea {
   width: 100%;
-  padding: 10px;
-  margin-bottom: 20px;
-}
-label textarea {
-  height: 100px;
-}
-label input[type=submit] {
-  background-color: #4e3d99;
-  color: white;
-  padding: 10px 20px;
+  padding: 0.7em;
   border: none;
-  cursor: pointer;
+  background: none;
+  outline: 0;
+  color: #fff;
+  border-bottom: 1px solid #4130d6;
 }
 
-input[type=text],
-textarea {
-  width: 70%;
-  padding: 10px;
-  margin-bottom: 20px;
+.contacto-form form button {
+  background: #4130d6;
+  border: 0;
+  text-transform: uppercase;
+  padding: 1em;
+}
+.contacto-form form button:hover {
+  background: blueviolet;
 }
 
-textarea {
-  height: 100px;
-}
-textarea .contacto-2 {
-  font-size: 23px;
-  margin-top: 30px;
-}
-
-label {
-  display: block;
-  margin-bottom: 10px;
-  color: #000;
-}
-label input[type=text],
-label textarea {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 20px;
-}
-label textarea {
-  height: 100px;
-}
-label input[type=submit] {
-  background-color: #4CAF50;
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  cursor: pointer;
+.contact-form form button:hover,
+.contact-form form button:focus {
+  background: #d63031;
+  color: #fff;
+  transition: background-color 1s ease-out;
+  outline: 0;
 }
 
-input[type=text],
-textarea {
-  width: 70%;
-  padding: 10px;
-  margin-bottom: 20px;
+/* CONTACTO INFO */
+.contacto-info {
+  background: #000;
+  color: #9743b8;
 }
 
-textarea {
-  height: 100px;
-}
-textarea input[type=text],
-textarea textarea {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 20px;
-}
-textarea textarea {
-  height: 100px;
-}
-textarea textarea input[type=text],
-textarea textarea textarea {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 20px;
-}
-textarea textarea input[type=submit] {
-  background-color: #4CAF50;
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  cursor: pointer;
-}
-
-input[type=submit] {
-  background-color: #4CAF50;
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  cursor: pointer;
+.contacto-info h4, .contacto-info ul, .contacto-info p {
+  text-align: center;
+  margin: 0 0 1rem 0;
 }/*# sourceMappingURL=main.css.map */

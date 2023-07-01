@@ -18,6 +18,8 @@
           color: #fff;
           box-shadow: inset 100px 0 30px 0 #9743b8;
           border-radius: 40px 40px;
+          transform: scale(1.04);
+          transition: transform .3s;
     }  
   }
   }

@@ -22,16 +22,18 @@ body{
        }
     }
 /*pagina sobre nosotros*/
+.imgHistoria{
+  display: none;
+}
 .terminos{
-       display: flex;
-       top:15%;
-       width: 35%;
-       height: 80%;
-        & li a{
-            font-size: 0.8em;
-            text-align: center;
-          }
-    }
+  width: 25%;
+  height: auto;
+  
+  .box a{
+    font-size: 18px;
+  }
+  
+}
 .video{
       display: none;
     }
@@ -121,9 +123,14 @@ body{
     }
 .footer-section form{
       display: none;
+     
     }
+    
 footer{
       margin-top: 100px;
+      h2{
+        display: none;
+      }
     }
     
  }
@@ -146,8 +153,7 @@ footer{
     
     
       /*pag quienes somos*/
-.terminos{
-      top:22.5%;
-      height: 53%;
-    }
+      .imgHistoria{
+        display: none;
+      }
      }
