@@ -293,6 +293,9 @@ input[type=checkbox] + label {
     font-size: 11px;
     margin-left: 5px;
   }
+  .producto .productos-item {
+    width: 200px;
+  }
   /*pagina sobre nosotros*/
   .imgHistoria {
     display: none;
@@ -558,7 +561,7 @@ section .productos .productos-item .carrito .carrito:hover {
   justify-content: center;
 }
 .productos .productos-item {
-  width: 350px;
+  width: 310px;
   margin-left: 5%;
   margin-top: 40px;
   margin-bottom: 40px;
