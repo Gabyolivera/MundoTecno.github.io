@@ -284,17 +284,22 @@ input[type=checkbox] + label {
     height: 50%;
   }
   .centro .navegacion img {
-    width: 65px;
+    width: 60px;
     display: flex;
     justify-content: center;
-    gap: 5px;
+    gap: 2px;
   }
   .centro .navegacion a {
-    font-size: 11px;
+    font-size: 9px;
     margin-left: 5px;
   }
   .producto .productos-item {
     width: 200px;
+  }
+  .btn-wsp {
+    width: 63px;
+    height: 63px;
+    line-height: 66px;
   }
   /*pagina sobre nosotros*/
   .imgHistoria {
@@ -435,6 +440,69 @@ input[type=checkbox] + label {
   transition: transform 0.3s;
 }
 
+.contactoDirecto {
+  position: relative;
+}
+.contactoDirecto .btn-wsp {
+  position: fixed;
+  width: 85px;
+  height: 85px;
+  bottom: 40px;
+  right: 40px;
+  background: #25d366;
+  color: #FFF;
+  border-radius: 60px;
+  text-align: center;
+  font-size: 50px;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
+  z-index: 100;
+  transition: all 300ms ease;
+}
+.contactoDirecto .btn-wsp:hover {
+  background: #c7d6cd;
+}
+
+.btn-wsp img {
+  position: relative;
+  z-index: 3;
+  width: 75px;
+  text-align: center;
+}
+
+.btn-wsp::before,
+.btn-wsp::after {
+  content: "";
+  position: absolute;
+  top: 11px;
+  left: 15px;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  background-color: #00e676;
+  opacity: 0;
+  animation: ondas 1.7s infinite;
+}
+
+.btn-wsp::before {
+  animation-delay: 1s;
+}
+
+.btn-wsp::after {
+  animation-delay: 1.3s;
+}
+
+@keyframes ondas {
+  0% {
+    transform: scale 1;
+  }
+  15% {
+    opacity: 1;
+  }
+  100% {
+    transform: scale(2.5);
+    opacity: 0;
+  }
+}
 /*pagina notebooks*/
 .texto {
   display: inline;
@@ -477,13 +545,14 @@ input[type=checkbox] + label {
   margin-top: 50px;
 }
 
-section .productos {
+.productos {
   display: flex;
   flex-flow: wrap;
   justify-content: center;
 }
-section .productos .productos-item {
-  width: 350px;
+.productos .productos-item {
+  width: 340px;
+  height: auto;
   margin-left: 5%;
   margin-top: 40px;
   margin-bottom: 40px;
@@ -493,35 +562,35 @@ section .productos .productos-item {
   flex-direction: column;
   text-align: center;
   align-items: center;
-  background-color: #f4eef7;
+  background-color: white;
   color: #531a69;
   font-weight: bold;
 }
-section .productos .productos-item img {
+.productos .productos-item img {
   width: auto;
 }
-section .productos .productos-item .detalle {
+.productos .productos-item .detalle {
   background-color: #9743b8;
-  height: 70px;
+  height: 15%;
   width: 100%;
   text-align: center;
   font-weight: bolder;
   font-size: 25px;
   color: #000;
 }
-section .productos .productos-item .detalle .detalle:hover {
+.productos .productos-item .detalle .detalle:hover {
   background-color: blue;
 }
-section .productos .productos-item .carrito {
+.productos .productos-item .carrito {
   border-radius: 5px 5px;
   background-color: #533ac2;
   width: 100%;
-  height: 20%;
+  height: 25%;
 }
-section .productos .productos-item .carrito a {
+.productos .productos-item .carrito a {
   text-decoration: none;
 }
-section .productos .productos-item .carrito .carrito:hover {
+.productos .productos-item .carrito .carrito:hover {
   background-color: red;
 }
 
@@ -562,6 +631,7 @@ section .productos .productos-item .carrito .carrito:hover {
 }
 .productos .productos-item {
   width: 310px;
+  height: auto;
   margin-left: 5%;
   margin-top: 40px;
   margin-bottom: 40px;
@@ -581,6 +651,7 @@ section .productos .productos-item .carrito .carrito:hover {
 }
 .productos .productos-item img {
   width: auto;
+  padding-top: 8px;
 }
 .productos .productos-item #dsc {
   display: flex;
@@ -601,16 +672,16 @@ section .productos .productos-item .carrito .carrito:hover {
   background-color: red;
 }
 .productos .productos-item .detalle {
-  background-color: #9743b8;
-  height: 50px;
+  background-color: #8a36ac;
+  height: 40px;
   width: 100%;
   text-align: center;
   font-weight: bolder;
-  font-size: 25px;
+  font-size: 20px;
   color: #000;
 }
-.productos .productos-item .detalle .detalle:hover {
-  background-color: blue;
+.productos .productos-item .detalle:hover {
+  background-color: rgb(162, 115, 168);
 }
 
 .contenedor {
