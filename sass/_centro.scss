@@ -26,7 +26,19 @@ header{
  
  }
 
-
+ .seleccionTitulo{
+    display: inline-flex;
+   justify-content: center;
+    background-color: #b277ce;
+    width: 100%;
+    height: 10%;
+      h1{
+        color: #000;
+        font-size: 55px;
+        text-align: center;
+        margin-top: 9px;
+      }
+ }  
 
 
 
@@ -55,15 +67,20 @@ main{
         margin-top: 50px;
      
      }
+    
      h3{
-        color: white;
         text-align: center;
+        color: #f4eef7;
      }
      .productos{
          display:flex;
         flex-flow: wrap; 
         justify-content: center;
+        
+       
      }
+    
+
      .productos-item{
         width: 300px;
         margin-left: 5%;

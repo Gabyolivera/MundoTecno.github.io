@@ -20,6 +20,9 @@
           border-radius: 40px 40px;
           transform: scale(1.04);
           transition: transform .3s;
+    }
+    & a:active{
+      color: #07012b;
     }  
   }
   }
