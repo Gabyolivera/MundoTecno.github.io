@@ -168,11 +168,12 @@ aside .cuotas {
   font-weight: bolder;
 }
 aside .video video {
-  display: inline;
-  margin-left: 3%;
+  display: inline-flex;
+  margin-left: 9%;
   box-shadow: 5px 8px 5px 8px rgba(184, 74, 184, 0.4);
   border-radius: 10px;
   margin-bottom: 50px;
+  width: 40%;
 }
 aside .novedades {
   display: flex;
@@ -440,7 +441,7 @@ input[type=checkbox] + label {
   gap: 18px;
 }
 .navegacion ul li a:active {
-  background-color: #f0f0f0;
+  background-color: #9c31a0;
 }
 .navegacion a {
   padding: 0 0.25rem;
