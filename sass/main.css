@@ -169,11 +169,11 @@ aside .cuotas {
 }
 aside .video video {
   display: inline-flex;
-  margin-left: 7%;
+  margin-left: 6%;
   box-shadow: 5px 8px 5px 8px rgba(184, 74, 184, 0.4);
   border-radius: 10px;
-  margin-bottom: 50px;
-  width: 40%;
+  margin-bottom: 45px;
+  width: 43.5%;
 }
 aside .novedades {
   display: flex;
