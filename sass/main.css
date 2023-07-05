@@ -582,7 +582,7 @@ input[type=checkbox] + label {
   justify-content: center;
 }
 .productos .productos-item {
-  width: 340px;
+  width: 330px;
   height: auto;
   margin-left: 5%;
   margin-top: 40px;
@@ -597,12 +597,13 @@ input[type=checkbox] + label {
   color: #531a69;
   font-weight: bold;
 }
-.productos .productos-item img {
-  width: auto;
+.productos .productos-item .imgCat {
+  width: 55%;
+  height: auto;
 }
 .productos .productos-item .detalle {
   background-color: #9743b8;
-  height: 15%;
+  height: 16%;
   width: 100%;
   text-align: center;
   font-weight: bolder;

@@ -55,7 +55,7 @@ margin-top: 50px;
 flex-flow: wrap; 
 justify-content: center;
 .productos-item{
-  width: 340px;
+  width: 330px;
   height: auto;
   margin-left: 5%;
   margin-top: 40px;
@@ -69,14 +69,16 @@ justify-content: center;
   background-color: white;
   color: #531a69;
   font-weight: bold;   
-  & img{
-    width: auto;
+  .imgCat{
+    width: 55%;
+    height: auto;
+    
     
    
       }
  .detalle{
   background-color: #9743b8;
-  height: 15%;
+  height: 16%;
   width: 100%;
   text-align: center;
   font-weight: bolder;
