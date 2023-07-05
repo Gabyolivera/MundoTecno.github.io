@@ -21,6 +21,7 @@ body{
           }  
        }
     }
+  
   .producto{
     .productos-item{
       width: 200px;
@@ -31,6 +32,9 @@ body{
     height:63px;
     line-height: 66px;
 }
+.seleccionTitulo h1 strong{
+  font-size: 0.5em;
+  }
 /*pagina sobre nosotros*/
 .imgHistoria{
   display: none;
@@ -79,7 +83,7 @@ body{
  /*media accesorios*/
 
 .comunicado-2{
-     font-size: 1.5em;
+     font-size: 0.7em;
     }
 .contenedor{
       .contenedor-box{
@@ -99,7 +103,7 @@ body{
         }
       }
 .contentedor-box{
-        p{font-size: 0.7em;
+        p{font-size: 0.6em;
     
         }
         h2{
@@ -107,7 +111,7 @@ body{
         }
       }
       img{
-        width: 50px;
+        width: 35px;
       }
     }
 .texto-2{

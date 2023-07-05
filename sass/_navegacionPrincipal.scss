@@ -4,6 +4,9 @@
    display: flex;
    justify-content: center;
    gap: 18px;
+   ul li a:active {
+   background-color: #f0f0f0;
+  }
         & a {
     padding: 0 .25rem;
     margin: 0 -.25rem;
@@ -21,9 +24,7 @@
           transform: scale(1.04);
           transition: transform .3s;
     }
-    & a:active{
-      color: #07012b;
-    }  
+     
   }
   }
   .contactoDirecto{
