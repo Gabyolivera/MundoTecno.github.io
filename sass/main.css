@@ -600,6 +600,7 @@ input[type=checkbox] + label {
 .productos .productos-item .imgCat {
   width: 55%;
   height: auto;
+  font-size: 10px;
 }
 .productos .productos-item .detalle {
   background-color: #9743b8;
